@@ -7,6 +7,7 @@
 #include <stdexcept>
 #include <string>
 #include <array>
+#include <sstream>
 using namespace std;
 string exec(const char* cmd) {
     array<char, 128> buffer;
@@ -20,6 +21,11 @@ string exec(const char* cmd) {
     return result;
 }
 
+string read_c_str(unsigned char* input){
+    stringstream s;
+    s << input;
+    return s.str();
+}
 
 
 #endif

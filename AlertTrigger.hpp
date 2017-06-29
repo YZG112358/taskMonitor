@@ -11,6 +11,7 @@ using namespace std;
 struct task{
     int pid;
     string name;
+    task(int a, string b) : pid(a), name(b){}
 };
 
 class AlertTrigger{
@@ -41,6 +42,7 @@ public:
             else{
                 retval.push_back(*it);
                 taskList.erase(it);
+                it--;
             }
         }
         return retval;
