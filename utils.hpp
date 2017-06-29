@@ -8,6 +8,7 @@
 #include <string>
 #include <array>
 #include <sstream>
+#include <regex>
 using namespace std;
 string exec(const char* cmd) {
     array<char, 128> buffer;
@@ -26,6 +27,8 @@ string read_c_str(unsigned char* input){
     s << input;
     return s.str();
 }
+
+
 
 
 #endif

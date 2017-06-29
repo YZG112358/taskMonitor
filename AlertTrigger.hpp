@@ -36,13 +36,14 @@ public:
         for (; it != taskList.end(); it++){
             regex n(it->name);
             regex p(to_string(it->pid));
-            if (regex_match(output.begin(), output.end(), n) || regex_match(output.begin(), output.end(), p)){
+            smatch m;
+            if (regex_search(output, m, n) || regex_search(output, m, p)){
+                // has the task running    
+            }
+            else{
                 retval.push_back(*it);
                 taskList.erase(it);
                 it--;
-            }
-            else{
-                // has the task running    
             }
         }
         return retval;
