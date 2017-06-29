@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<story>
+    <usrname>billytaskalert@gmail.com</usrname>
+    <password>UIUC61802</password>
+    <from>billytaskalert@gmail.com</from>
+    <to>guyongzhou@gmail.com</to>
+    <server>smtp.gmail.com:587</server>
+    <subject>Task_Alert</subject>
+    <task_name_1>sleep</task_name_1>
+</story>

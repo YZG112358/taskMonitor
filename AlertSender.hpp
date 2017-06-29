@@ -4,7 +4,7 @@
 #include <string>
 #include <unistd.h>
 #include <stdlib.h>
-#include <isotream>
+#include <iostream>
 using namespace std;
 class AlertSender{
 public:
@@ -28,6 +28,9 @@ public:
     }
     void setServer(string server){
         _server = server;
+    }
+    void setMessage(string message){
+        _message = message;
     }
     bool sendEmail(){
         string command;
