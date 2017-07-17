@@ -4,7 +4,7 @@ OBJS = main.o
 CXX = clang++
 CXXFLAGS = -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic -I/usr/include/libxml2
 LD = clang++
-LDFLAGS = -std=c++1y -stdlib=libc++ -lpng -lc++abi -lpthread -lxml2
+LDFLAGS = -std=c++1y -stdlib=libc++ -lpthread -lxml2
 
 all : $(EXENAME)
 
